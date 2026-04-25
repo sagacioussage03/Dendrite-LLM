@@ -1,0 +1,24 @@
+# ── Python ────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+venv/
+.env
+
+# ── Node ──────────────────────────────────
+node_modules/
+dist/
+.vite/
+
+# ── Dendrite PIDs & Logs ─────────────────
+.pids/
+
+# ── IDE / OS ──────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
