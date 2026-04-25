@@ -52,7 +52,7 @@ ollama pull llama3.2:3b
 ```bash
 initdb $PREFIX/var/lib/postgresql
 pg_ctl -D $PREFIX/var/lib/postgresql start
-createdb dendrite
+createdb dendrite-llm-db
 ```
 
 ### 2. Clone & Configure
@@ -92,7 +92,7 @@ All configuration is via **environment variables** (loaded from `backend/.env`):
 
 | Variable              | Default                                            | Description                         |
 |-----------------------|----------------------------------------------------|-------------------------------------|
-| `DATABASE_URL`        | `postgresql://postgres:postgres@localhost:5432/dendrite` | PostgreSQL connection string   |
+| `DATABASE_URL`        | `postgresql://postgres:postgres@localhost:5432/dendrite-llm-db` | PostgreSQL connection string   |
 | `OLLAMA_BASE_URL`     | `http://localhost:11434`                           | Ollama server URL                   |
 | `OLLAMA_MODEL`        | `llama3.2:3b`                                      | Model to use for chat               |
 | `OLLAMA_TIMEOUT`      | `120`                                              | Request timeout (seconds)           |

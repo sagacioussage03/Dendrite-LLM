@@ -22,13 +22,13 @@ echo "  → Starting Backend (port 8001)..."
 cd "$BACKEND_DIR"
 
 # Create venv if it doesn't exist
-if [ ! -d "venv" ]; then
+if [ ! -d "venv-Dendrite-LLM" ]; then
     echo "    Creating Python virtual environment..."
-    python -m venv venv
-    source venv/bin/activate
+    python -m venv venv-Dendrite-LLM
+    source venv-Dendrite-LLM/bin/activate
     pip install -r requirements.txt --quiet
 else
-    source venv/bin/activate
+    source venv-Dendrite-LLM/bin/activate
 fi
 
 # Copy .env.example to .env if .env doesn't exist
