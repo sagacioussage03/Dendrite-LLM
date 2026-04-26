@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 *.so
 venv-Dendrite-LLM/
-.env
+#.env
 
 # ── Node ──────────────────────────────────
 node_modules/
