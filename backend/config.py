@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     """Application settings loaded from environment variables."""
 
     # ── Database ──────────────────────────────────────────
-    DATABASE_URL: str = "postgresql://postgres:postgres@localhost:5432/dendrite-llm-db"
+    DATABASE_URL: str = "postgresql://localhost/dendrite-llm-db"
 
     # ── Ollama ────────────────────────────────────────────
     OLLAMA_BASE_URL: str = "http://localhost:11434"
